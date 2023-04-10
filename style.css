@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background:   #ffccff;
+    background:   #000000;
 }
 
 .wrapper{
@@ -57,6 +57,8 @@ header .column span{
      color: #ffccff;
      text-transform: uppercase;
      cursor: pointer;
+     position: relative;
+     list-style: none;
 }
 
 .piano-keys .white{
@@ -67,6 +69,11 @@ header .column span{
       background: linear-gradient(#fff 96%, #ffccff 4%);
 }
 
+.piano-keys .white:active {
+       background: linear-gradient(to bottom, #fff 0%, #ffccff 100%);
+       box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    }
+
 .piano-keys .black{
        width: 44px;
        height: 140px;
@@ -75,3 +82,27 @@ header .column span{
        border-radius: 0 0 5px 5px;
        background: linear-gradient(#333, #000);
 }
+
+.piano-keys .black:active {
+    background: linear-gradient(to bottom, #000, #434343);
+    box-shadow: inset -5px 5px 10px rgba(255,255,255,0.1);
+ }
+
+.piano-keys span{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.13rem;
+    text-align: center;
+}
+
+  .bunny-img {
+
+    top: 12.5vh;
+    left: 110vh;
+    max-width: 150px;
+    position: absolute;
+
+  }
+
+
