@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace ;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:   #ffccff;
+}
+
+.wrapper{
+    width:780px;
+    border-radius: 25px;
+    padding: 35px 40px;
+    background: #1a1a1a;
+}
+
+.wrapper header{
+    color: #ffccff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2{
+    font-size: 1.6rem;
+}
+
+header .column{
+    display: flex;
+    align-items: center;
+}
+
+header .column span{
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.19rem;
+}
+
+.volume-slider input{
+    accent-color: #ffccff;
+    outline: none;
+}
+
+.piano-keys{
+    display: flex;
+    margin-top: 40px;
+}
+
+.piano-keys .key{
+     list-style: none;
+     color: #ffccff;
+     text-transform: uppercase;
+     cursor: pointer;
+}
+
+.piano-keys .white{
+      width: 70px;
+      height: 230px;
+      border-radius: 8px;
+      border: 1px solid #000;
+      background: linear-gradient(#fff 96%, #ffccff 4%);
+}
+
+.piano-keys .black{
+       width: 44px;
+       height: 140px;
+       z-index: 2;
+       margin: 0 -22px 0 -22px;
+       border-radius: 0 0 5px 5px;
+       background: linear-gradient(#333, #000);
+}
