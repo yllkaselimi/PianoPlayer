@@ -1,5 +1,5 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key"),
-volumeSlider = document.querySelectorAll(".volume-slider input");
+volumeSlider = document.querySelector(".volume-slider input");
 
 
 let allKeys = [],
